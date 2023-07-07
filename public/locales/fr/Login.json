@@ -1,0 +1,23 @@
+{
+  "Sign_in": "Sign in",
+  "Email": "Courriel",
+  "password": "Mot de passe",
+  "Remember": " Se souvenir de moi",
+  "Forgot_password?": "Mot de passe oublié ?",
+  "messageSingUp": "Nouvel utilisateur ? Enregistrement",
+  "Register": "S'enregistrer",
+  "First_name": "Prénom",
+  "Last_name": "Nom",
+  "Confirm_password": "Confirmation du mot de passe",
+  "have_account": "Vous avez déjà un compte ? Connexion",
+  "message_firstName": "prénom est obligatoire",
+  "message_LastName": "Le nom de famille est obligatoire",
+  "message_email": "L’adresse e-mail est requise",
+  "exists_email": "L'email existe déjà",
+  "message_password": "Le mot de passe est requis",
+  "message_password_long": "Le mot de passe doit comporter au moins 8 caractères!",
+  "message_Confirm_password": "Confirmer que le mot de passe est requis",
+  "password_validate": "Les mots de passe doivent correspondre!",
+  "Valid_Email": "S’il vous plaît entrer une adresse e-mail valide!",
+  "error_email_password":"email ou mot de passe incorrect"
+}

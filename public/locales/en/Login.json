@@ -1,0 +1,23 @@
+{
+  "Sign_in": "Sign in",
+  "Email": "Email Address",
+  "password": "password",
+  "Remember": "Remember me",
+  "Forgot_password?": "Forgot password?",
+  "messageSingUp": "Don't have an account? Sign Up",
+  "Register": "Register",
+  "First_name": "First name",
+  "Last_name": "Last name",
+  "Confirm_password": "Confirm password",
+  "have_account": "Already have an account? Sign in",
+  "message_firstName": "first Name is required",
+  "message_LastName": "Last Name is required",
+  "message_email": "email is required",
+  "exists_email": "Email already exists",
+  "message_password": "password is required",
+  "message_password_long": "Password must be at least 8 characters long!",
+  "message_Confirm_password": "Confirm Passwordis required",
+  "password_validate": "Passwords should match!",
+  "Valid_Email":"Please Enter A Valid Email!",
+  "error_email_password":"email or password incorrect"
+}

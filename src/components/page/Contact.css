@@ -1,0 +1,78 @@
+.contact {
+  background-image: url("https://images.unsplash.com/photo-1640876777002-badf6aee5bcc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+  object-position: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.cardPaper {
+  background-image: url("https://images.unsplash.com/photo-1683630362635-2059a4134887?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #c3c8cac5;
+}
+.Department {
+  background-image: url("https://www.loyolamedicine.org/assets/images/news_images/nr-top-surgeons.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #021f31c5;
+}
+.Appointment {
+  background-image: url("https://www.loyolamedicine.org/assets/images/news_images/nr-top-surgeons.jpg");
+
+  background-repeat: no-repeat;
+  color: #b0b3b6cc;
+}
+.dropshadow {
+  filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
+}
+.Footer {
+  background-image: url("https://images.unsplash.com/photo-1683630362635-2059a4134887?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+  object-position: fixed;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.login {
+  background-image: url("https://images.unsplash.com/photo-1462396240927-52058a6a84ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80");
+  object-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.hedear {
+  background-image: url("../../images/1435153_701.jpg");
+  /*   object-position: fixed; */
+  background-size: contain;
+
+  background-repeat: no-repeat;
+  /*   background-attachment: fixed; */
+}
+.marq{
+  font-size: large;
+  font-weight: 600;
+  direction: scroll;
+  height: 100%;
+  padding: 14px;
+  box-shadow: 3px;
+  font-family: "Cairo";
+ 
+}
+.TabPanel {
+  animation: in 0.5s ease-in;
+}
+@keyframes in {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

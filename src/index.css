@@ -1,0 +1,22 @@
+html{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+html[dir="ltr"] { direction: ltr; unicode-bidi: isolate; }
+
+html[dir="rtl"] { direction: rtl; unicode-bidi: isolate; }
+body {
+  margin: 0;
+  font-family: "Roboto";
+  box-sizing: border-box!important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  color: rgba(0, 0, 0, 0.295);
+}

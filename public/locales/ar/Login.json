@@ -1,0 +1,23 @@
+{
+  "Sign_in": "سجل الدخول إلى حسابك",
+  "Email": "البريد الإلكتروني",
+  "password": "كلمة السر",
+  "Remember": " تذكرني",
+  "Forgot_password?": "نسيت كلمة المرور ؟",
+  "messageSingUp": "مستخدم جديد؟ التسجيل",
+  "Register": "التسجيل",
+  "First_name": "الاسم الأول",
+  "Last_name": "اسم العائلة",
+  "Confirm_password": "تأكيد كلمة المرور",
+  "have_account": "هل لديك حساب بالفعل؟ تسجيل الدخول",
+  "message_firstName": "الاسم الأول مطلوب",
+  "message_LastName": "الاسم الأخير مطلوب",
+  "message_email": "البريد الإلكتروني مطلوب",
+  "exists_email": "البريد الإلكتروني موجود بالفعل",
+  "message_password": "كلمة المرور مطلوبة",
+  "message_password_long": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل!",
+  "message_Confirm_password": "تأكيد كلمة المرور مطلوب",
+  "password_validate": "يجب أن تتطابق كلمات المرور!",
+  "Valid_Email":"الرجاء إدخال بريد إلكتروني صحيح!",
+  "error_email_password":"البريد الإلكتروني أو كلمة المرور غير صحيحة"
+}

@@ -1,0 +1,53 @@
+.contact {
+  background-image: url("../src/images/1600707493blue-lines-curved-grid.svg");
+  object-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.cardPaper {
+  background-image: url("https://images.unsplash.com/photo-1683630362635-2059a4134887?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #c3c8cac5;
+}
+.Department {
+  background-image: url("https://www.loyolamedicine.org/assets/images/news_images/nr-top-surgeons.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #021f31c5;
+}
+.Appointment {
+  background-image: url("https://www.loyolamedicine.org/assets/images/news_images/nr-top-surgeons.jpg");
+
+  background-repeat: no-repeat;
+  color: #1e2636ea;
+}
+.dropshadow {
+  filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
+  color: #1a3947;
+}
+.login {
+  background-image: url("https://images.unsplash.com/photo-1640876777002-badf6aee5bcc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+  object-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #0a0a0aef;
+}
+
+.TabPanel {
+  animation: in 0.5s ease-in;
+}
+@keyframes in {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
