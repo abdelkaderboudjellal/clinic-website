@@ -22,17 +22,10 @@ import { useTranslation } from "react-i18next";
 const Login = () => {
   const { t } = useTranslation(["Login", "Navbar"]);
   const theme = useTheme();
-  /*   const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
-  }; */
+
 
   const navigate = useNavigate();
-  const url = "http://localhost:9000/user?email";
+  const url = "https://products-jtax.onrender.com/user";
   const [users, setUsers] = useState({});
   const {
     register,
@@ -46,21 +39,21 @@ const Login = () => {
     },
   });
   const data = () => {
-    const url1 = "http://localhost:9000/user";
-   /*  fetch(`${url1}`)
+    const url1 = "https://products-jtax.onrender.com/user";
+    fetch(`${url1}`)
       .then((res) => {
         return res.json();
       })
       .then((users) => {
         setUsers(users);
-      }); */
+      });
   };
   useEffect(() => {
     data();
   }, []);
   const [messageAll, setMessageAll] = useState(false);
-  /*   const [email, setEmail] = useState();
-  const [password, setPassword] = useState(); */
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
   const [acces, setAcces] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
@@ -69,12 +62,12 @@ const Login = () => {
   const handleMouseDownPassword = (event) => {
     event.preventDefault();
   };
+
   return (
     <div className="login">
       <Box
         component="main"
-        /*   maxWidth="xs" */
-        sx={{ bgcolor: "#3b3c3dbd", py: 25 }}
+        sx={{ bgcolor: "#00000069", py: 25 }}
       >
         <Container
           maxWidth="xs"
@@ -87,8 +80,9 @@ const Login = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "start",
+
             backgroundColor: (theme) =>
-              theme.palette.mode === "light" ? "#b0b3b6d8" : "#38393acc",
+              theme.palette.mode === "light" ? "white" : "#38393acc",
           }}
         >
           <Stack
@@ -110,7 +104,7 @@ const Login = () => {
           <Box
             component="form"
             onSubmit={handleSubmit((data) => {
-         /*      users.map((user) => {
+              users.map((user) => {
                 if (
                   user.email === data.email &&
                   user.password === data.password
@@ -121,7 +115,7 @@ const Login = () => {
                   navigate("/*");
                 } else {
                 }
-              }); */
+              });
               setMessageAll(!messageAll);
             })}
             noValidate
@@ -208,12 +202,12 @@ const Login = () => {
             </Button>
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2">
+                <Link href="#" variant="body2" style={{color:theme.palette.aek.main}}>
                   {t("Forgot_password?")}
                 </Link>
               </Grid>
               <Grid item>
-                <Link to="/SingUp" variant="body2">
+                <Link to="/SingUp" variant="body2" style={{color:theme.palette.aek.main}}>
                   {t("messageSingUp")}
                 </Link>
               </Grid>

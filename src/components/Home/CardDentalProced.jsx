@@ -3,14 +3,14 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
-import { Button, CardActionArea, CardActions, Avatar } from "@mui/material";
+import { Button, CardActions, Avatar, CardMedia } from "@mui/material";
 import { useTranslation } from "react-i18next";
 const CardDentalProced = (props) => {
   const {t,i18n}=useTranslation("Home")
   return (
     <>
       <Card variant="outlined" sx={{ m: 2 }} >
-        <CardActionArea>
+        <CardMedia>
           <Avatar
             sx={{
               my: 2,
@@ -37,7 +37,7 @@ const CardDentalProced = (props) => {
             { t("Discription")}
             </Typography>
           </CardContent>
-        </CardActionArea>
+        </CardMedia>
         <CardActions>
           <Button
             size="small"

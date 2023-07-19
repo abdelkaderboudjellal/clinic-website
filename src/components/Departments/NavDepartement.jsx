@@ -1,8 +1,9 @@
 import React from "react";
 import { Box, Stack, Typography, Container } from "@mui/material";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
-import Link from "@mui/material/Link";
+
 import "../page/Contact.css";
+import { Link } from "react-router-dom";
 const NavDepartement = () => {
   return (
     <div className="Department ">
@@ -33,7 +34,7 @@ const NavDepartement = () => {
               aria-label="breadcrumb"
               sx={{ maxWidth: "lg", py: 2, color: "white" }}
             >
-              <Link underline="hover" color="white" href="/" fontWeight="500">
+              <Link underline="hover"  style={{color:"white"}} to="/" fontWeight="500">
                 Home
               </Link>
               <Typography color="white" fontWeight="50">

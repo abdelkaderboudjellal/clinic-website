@@ -23,7 +23,7 @@ export default function Footer() {
         sx={{
           p: { xs: 4, sm: 8 },
           backgroundColor: (theme) =>
-            theme.palette.mode === "light" ? "#b0b3b6cc" : "#38393acc",
+            theme.palette.mode === "light" ? "#ffffffad" : "#282d31dc",
         }}
       >
         <Container maxWidth="lg" sx={{ height: "100%" }}>
@@ -61,7 +61,7 @@ export default function Footer() {
                 "&:hover": { border: "none" }, */
                 }}
               >
-                <Email /> :
+                <Email color="primary" /> :
                 <Link
                   sx={{
                     color: "text.secondary",
@@ -83,7 +83,7 @@ export default function Footer() {
                   px: 1,
                 }}
               >
-                <Call /> :
+                <Call color="primary" /> :
                 <Link
                   sx={{
                     color: "text.secondary",

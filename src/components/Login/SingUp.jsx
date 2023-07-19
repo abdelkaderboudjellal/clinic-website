@@ -15,6 +15,7 @@ import {
   Stack,
   TextField,
   Typography,
+  useTheme,
 } from "@mui/material";
 
 import { useState } from "react";
@@ -25,19 +26,20 @@ import { useTranslation } from "react-i18next";
 import ChangeLangue from "../navbar/ChangeLangue";
 
 const SingUp = () => {
+  const theme = useTheme();
   const { t } = useTranslation(["Login", "Navbar"]);
   const navigate = useNavigate();
-  const url = "http://localhost:9000/user?email";
+  const url = "https://products-jtax.onrender.com//user?email";
   const [data, setData] = useState([]);
   const updatedata = () => {
-/*     const data = getValues();
+    const data = getValues();
     fetch(`${url}`, {
       method: "POST",
       body: JSON.stringify(getValues()),
       headers: { "Content-Type": "application/json" },
     })
       .then((res) => res.json())
-      .then((json) => setData(json.data)); */
+      .then((json) => setData(json.data));
   };
   const {
     register,
@@ -62,7 +64,7 @@ const SingUp = () => {
   /*   console.log(getValues()); */
   return (
     <div className="login">
-      <Box component="main" sx={{ bgcolor: "#3b3c3daf", py: 25 }}>
+      <Box component="main" sx={{ bgcolor:  "#00000069", py: 25 }}>
         <CssBaseline />
         <Container
           maxWidth="xs"
@@ -77,7 +79,7 @@ const SingUp = () => {
             justifyContent: "center",
             alignItems: "center",
             backgroundColor: (theme) =>
-              theme.palette.mode === "light" ? "#b0b3b6cc" : "#38393acc",
+              theme.palette.mode === "light" ? "white" : "#38393acc",
           }}
         >
           {" "}
@@ -99,7 +101,7 @@ const SingUp = () => {
           <form
             noValidate
             onSubmit={handleSubmit((data) => {
-              /* updatedata(); */
+              updatedata();
               setData(JSON.stringify(data));
               navigate("/*");
             })}
@@ -169,7 +171,7 @@ const SingUp = () => {
 
                       emailAvailable: async (fieldValue) => {
                         const response = await fetch(
-                          `http://localhost:9000/user?email=${fieldValue}`
+                          `https://products-jtax.onrender.com/email=${fieldValue}`
                         );
                         const data = await response.json();
                         return data.length === 0 || t("exists_email");
@@ -275,9 +277,7 @@ const SingUp = () => {
                
               </Grid>
             </Grid>
-          {/*   <Link to={"/Login"} fullWidth variant="contained" color="primary">
-              {t("Register")}
-            </Link> */}
+          
             <Button
               type="submit"
               fullWidth
@@ -294,7 +294,7 @@ const SingUp = () => {
             </Button>
             <Grid container justify="flex-end">
               <Grid item>
-                <Link to="/Login" variant="body2">
+                <Link to="/Login" variant="body2" style={{color:theme.palette.aek.main}}>
                   {t("have_account")}
                 </Link>
               </Grid>

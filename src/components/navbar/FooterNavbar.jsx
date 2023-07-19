@@ -39,15 +39,12 @@ export default function FooterNavbar({ setMode }) {
     [theme.palette.mode]
   );
   return (
-    <Box 
-      sx={{
-        flexGrow: 1,
-        px: { md: "2%", sm: "0" },
-      }}
-    >
+    <>
       <AppBar
         position="static"
         sx={{
+          px: { md: "2%", sm: "0" },
+          flexGrow: 1,
           backgroundColor: theme.palette.aek.back,
           color: theme.palette.aek.tex,
           boxShadow: "none",
@@ -61,34 +58,11 @@ export default function FooterNavbar({ setMode }) {
           }}
         >
           <Box sx={{ display: "flex", alignItems: "center" }}>
-            {/*    <ButtonGroup variant="text"  color="inherit">
-              <Button
-                className="btn-4"
-               
-              >
-                Fr
-              </Button>
-              <Button>
-                En
-              </Button>
-            </ButtonGroup> */}
             <ChangeLangue />
-            {/*   <IconButton
-              sx={{ ml: 1,border:`1px solid ${theme.palette.aek.tex}` }}
-              onClick={colorMode.toggleColorMode}
-              color="inherit"
-            >
-              {theme.palette.mode === "dark" ? (
-                <Sun sx={{ color: theme.palette.aek.tex}} />
-              ) : (
-                <Moon />
-              )}
-            </IconButton> */}
-            {/* <Box sx={{margin:"4px",borderRadius:"10px",border:`1px solid ${theme.palette.aek.tex}`,bgcolor:"#e0f2f1"}}> */}
 
             <Switchs checke={checke} onClick={colorMode.toggleColorMode} />
           </Box>
-          {/* </Box> */}
+
           <Box
             sx={{
               display: { xs: "none", sm: "flex" },
@@ -105,10 +79,6 @@ export default function FooterNavbar({ setMode }) {
                 justifyItems: "center",
                 alignItems: "center",
                 fontSize: ".8rem",
-
-                /*    border: "none",
-                color: theme.palette.aek.tex,
-                "&:hover": { border: "none" }, */
               }}
             >
               <Link
@@ -125,31 +95,31 @@ export default function FooterNavbar({ setMode }) {
               <Email />
             </Box>
             <Box
-                variant="outlined"
+              variant="outlined"
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                justifyItems: "center",
+                alignItems: "center",
+                fontSize: ".8rem",
+                px: 1,
+              }}
+            >
+              <Link
                 sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  justifyItems: "center",
-                  alignItems: "center",
-                  fontSize: ".8rem",
-                  px: 1,
+                  color: "text.secondary",
+                  textDecoration: "underline black",
+                  px: 2,
                 }}
+                href="tel:+213659066090"
               >
-                <Link
-                  sx={{
-                    color: "text.secondary",
-                    textDecoration: "underline black",
-                    px: 2,
-                  }}
-                  href="tel:+213659066090"
-                >
-                   0659066090
-                </Link>
-                  <Call /> 
-              </Box>
+                0659066090
+              </Link>
+              <Call />
+            </Box>
           </Box>
         </Toolbar>
       </AppBar>
-    </Box>
+    </>
   );
 }

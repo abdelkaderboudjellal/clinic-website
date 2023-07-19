@@ -3,6 +3,7 @@ import "./InterfaceHome.css";
 import Container from "@mui/material/Container";
 import { Box, Button, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import '../page/Contact.css'
 const DentalTourism = () => {
   const { t, i18n } = useTranslation(["Home"]);
   const [progress, setProgress] = React.useState(1);

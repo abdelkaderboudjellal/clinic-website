@@ -1,6 +1,4 @@
 import "./App.css";
-
-import Navbar from "./components/navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/page/Home";
 import About from "./components/page/About";
@@ -9,16 +7,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import FooterNavbar from "./components/navbar/FooterNavbar";
 import { createContext, useState } from "react";
-import {
-  Box,
-  CircularProgress,
-  Container,
-  LinearProgress,
-  List,
-  ListSubheader,
-  Stack,
-  Tooltip,
-} from "@mui/material";
+import { Box, LinearProgress, ListSubheader, Tooltip } from "@mui/material";
 import ScrollBack from "./components/page/ScrollBack";
 import Fab from "@mui/material/Fab";
 import { Suspense } from "react";
@@ -30,7 +19,6 @@ import ErrorPage from "./components/page/ErrorPage";
 import { useEffect } from "react";
 import cookies from "js-cookie";
 import NavbarTest from "./components/navbar/NavbarTest";
-import { enUS, arSA } from "@mui/material/locale";
 import Login from "./components/Login/Login";
 import { Loader } from "@mantine/core";
 import SingUp from "./components/Login/SingUp";
@@ -55,7 +43,6 @@ function App({ props }) {
   const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
   const { t } = useTranslation(["Navbar"]);
   useEffect(() => {
-    /*  console.log("Setting page stuff"); */
     document.body.dir = currentLanguage.dir || "ltr";
     document.title = t("app_title");
   }, [currentLanguage, t]);
@@ -119,13 +106,12 @@ function App({ props }) {
         <CssBaseline />
 
         <Box id="back-to-top-anchor" />
-        {/*   <List> */}
+
         <ListSubheader sx={{ width: "100%", padding: "0", margin: "0" }}>
           <FooterNavbar setMode={setMode} />
         </ListSubheader>
         <ListSubheader sx={{ width: "100%", padding: "0", margin: "0" }}>
           <NavbarTest />
-          {/* <Navbar/> */}
         </ListSubheader>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -152,7 +138,6 @@ function App({ props }) {
             </Fab>
           </Tooltip>
         </ScrollBack>
-        {/* </List> */}
       </ThemeProvider>
     </Suspense>
   );

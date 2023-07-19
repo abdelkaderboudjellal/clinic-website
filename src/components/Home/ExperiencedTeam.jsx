@@ -100,7 +100,7 @@ const ExperiencedTeam = () => {
   }
   const theme = useTheme();
   return (
-    <>
+    <div className="Experienced ">
       <Container maxWidth="lg" sx={{ flexDirection: "column", py: 8 }}>
         <Box
           sx={{
@@ -147,7 +147,7 @@ const ExperiencedTeam = () => {
           })}
         </Box>
       </Container>
-    </>
+    </div>
   );
 };
 

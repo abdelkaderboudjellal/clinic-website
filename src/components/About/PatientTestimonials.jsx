@@ -6,6 +6,7 @@ import {
   Typography,
   useTheme,
   Stack,
+  CardMedia,
 } from "@mui/material";
 
 import Card from "@mui/material/Card";
@@ -29,29 +30,29 @@ const PatientTestimonials = (props) => {
         }}
       >
         <Box sx={{ display: "flex" }}>
-          {/*    <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "flex-start",
-              justifyItems: "start",
-              px: 2,
-            }}
-          >
-            <RxQuote size={80} color=" #1976D2" transform="rotate(3.1416rad)" />
-          </Box> */}
-          <CardActionArea
-          /* sx={{ bgcolor: "transparent", "&:focus": { bgcolor: "transparent" } }} */
-          >
-            <Avatar
-              src={props.image}
+          <CardMedia>
+            <Box
               sx={{
-                mb: 2,
-                width: 100,
-                height: 100,
+                display: "flex",
+                alignItems: "center",
+                border: "#29B6F6 3px solid",
+                borderRadius: "100%",
+                width: 112,
+                height: 112,
+                
                 mx: "auto",
               }}
-            ></Avatar>
+            >
+              <Avatar
+                src={props.image}
+                sx={{
+                  display: "block",
+                  mx: "auto",
+                  width: 100,
+                  height: 100,
+                }}
+              ></Avatar>
+            </Box>
             <Stack sx={{ textAlign: "center" }}>
               <Typography
                 gutterBottom
@@ -60,7 +61,6 @@ const PatientTestimonials = (props) => {
                 sx={{
                   fontWeight: "bold",
                   fontFamily: "Volkhov,serif",
-                  /*  fontStyle: 'italic' */
                 }}
               >
                 {props.name}
@@ -73,7 +73,6 @@ const PatientTestimonials = (props) => {
                   fontWeight: "bold",
                   color: "#9e9e9e",
                   fontFamily: "Volkhov,serif",
-                  /* fontStyle: 'italic' */
                 }}
               >
                 {props.title}
@@ -90,7 +89,7 @@ const PatientTestimonials = (props) => {
                 >
                   <FormatQuote
                     sx={{
-                      fontSize:{xs:30,md:60},
+                      fontSize: { xs: 30, md: 60 },
                       transform: "rotate(180deg)",
                       color: " #1976D2",
                     }}
@@ -121,7 +120,7 @@ const PatientTestimonials = (props) => {
                 >
                   <FormatQuote
                     sx={{
-                      fontSize:{xs:30,md:60},
+                      fontSize: { xs: 30, md: 60 },
                       transform: "rotate(0deg)",
                       color: " #1976D2",
                     }}
@@ -129,18 +128,7 @@ const PatientTestimonials = (props) => {
                 </Box>
               </Box>
             </Stack>
-          </CardActionArea>
-          {/*    <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "flex-end",
-              justifyItems: "end",
-              px: 2,
-            }}
-          >
-            <RxQuote size={80} color=" #1976D2" transform="rotate(3.1416rad)" />
-          </Box> */}
+          </CardMedia>
         </Box>
       </Card>
     </Box>

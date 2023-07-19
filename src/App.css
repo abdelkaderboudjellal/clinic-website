@@ -1,16 +1,4 @@
-/* html {
-  display: block;
 
-}
-body[dir="ltr"] {
-  direction: ltr;
-  unicode-bidi: isolate;
-}
-
-body[dir="rtl"] {
-  direction: rtl;
-  unicode-bidi: isolate;
-} */
 ::selection {
   background: #2ab6727e;
   

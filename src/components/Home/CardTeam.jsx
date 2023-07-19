@@ -3,13 +3,13 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 
 import Typography from "@mui/material/Typography";
-import { Avatar, Box, CardActionArea } from "@mui/material";
+import { Avatar, Box, CardActionArea, CardMedia } from "@mui/material";
 import { Call, Email } from "@mui/icons-material";
 const CardTeam = (props) => {
   return (
     <>
       <Card sx={{ width: { xm: "100%" }, mx:{xs:0,sm: 2},my:{xs:2,md:0} }}>
-        <CardActionArea>
+        <CardMedia>
           <Box
             sx={{
               display: "flex",
@@ -72,7 +72,7 @@ const CardTeam = (props) => {
               {props.email}
             </Typography>
           </CardContent>
-        </CardActionArea>
+        </CardMedia>
       </Card>
     </>
   );
